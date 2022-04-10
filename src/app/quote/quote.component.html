@@ -11,10 +11,9 @@
 </div> -->
 <div class="card" style="width: 100rem;">
     <div id="display">
-    <div class="card" style="width: 18rem;" *ngFor="let quote of quotes">
+        <div class="card" style="width: 18rem;" *ngFor="let quote of quotes">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <h5 class="card-title">Wisdom</h5>
           <p class="card-text">
             <li>
                 {{quote.quote}}<br>
@@ -30,6 +29,33 @@
             </li>
           </p>
         </div>
+        </div>
     </div>
 </div>
+
+<!-- <div class="container-fluid">
+    <h2 class="text-center">Create a new Goal</h2>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+    </form>
+</div>
+<div class="col-md-6">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div> -->
+<div style="text-align: center;">
+    <form ngSubmit = "Add quote()">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Author</label>
+          <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Author" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Quote Title</label>
+            <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote title" ngModel>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Quote</label>
+          <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Add quote</button>
+    </form>
 </div>

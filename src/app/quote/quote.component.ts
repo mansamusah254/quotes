@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { FormBuilder } from '@angular/forms';
+
+
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -7,7 +11,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote('it is what it is',0, 0,'Alvin'),
+    new Quote('“The fool doth think he is wise, but the wise man knows himself to be a fool.” ',0, 0,'William Shakespeare'),
     new Quote('the  mind in the body at peace',0, 0,'Alvin'),
     new Quote('actuality is profanity',0, 0,'Alvin'),
     new Quote('define insanity',0, 0,'Alvin'),
@@ -22,5 +26,4 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
