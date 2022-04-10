@@ -9,22 +9,27 @@
         </div>
     </div>
 </div> -->
-<div>
-    <ul *ngFor="let quote of quotes">
-        <li>
-            {{quote.quote}}
-            <span class="text-primary">Upvote
-                {{quote.upvote}}
-            </span>
-            <span class="text-warning">Downvote
-                {{quote.downvote}}
-            </span>
-        </li>
-        <li>
-            {{quote.description}}
-        </li>
-    </ul>
+<div class="card" style="width: 100rem;">
+    <div id="display">
+    <div class="card" style="width: 18rem;" *ngFor="let quote of quotes">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">
+            <li>
+                {{quote.quote}}<br>
+                <span class="text-primary">Upvote
+                    {{quote.upvote}}
+                </span>
+                <span class="text-warning">Downvote
+                    {{quote.downvote}}<br>
+                </span>
+            </li>
+            <li>
+                {{quote.description}}
+            </li>
+          </p>
+        </div>
+    </div>
 </div>
-<div class="mt-5 text-center">
-
 </div>
