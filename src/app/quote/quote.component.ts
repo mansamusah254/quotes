@@ -24,6 +24,11 @@ export class QuoteComponent implements OnInit {
   ]
   constructor() { }
 
+  showMe:boolean = true
+  toggleMe(){
+    this.showMe=!this.showMe
+  }
+
   ngOnInit(): void {
   }
 }

@@ -43,7 +43,7 @@
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div> -->
 <div style="text-align: center;">
-    <form ngSubmit = "Add quote()">
+    <form ngSubmit = "Add quote()" *ngIf="showMe">
         <div class="form-group">
           <label for="exampleInputEmail1">Author</label>
           <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Author" ngModel>
@@ -56,6 +56,6 @@
           <label for="exampleInputPassword1">Quote</label>
           <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote" ngModel>
         </div>
-        <button type="submit" class="btn btn-primary">Add quote</button>
     </form>
+    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add quote</button>
 </div>
