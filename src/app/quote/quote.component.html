@@ -9,9 +9,10 @@
         </div>
     </div>
 </div> -->
+
 <div class="card" style="width: 100rem;">
     <div id="display">
-        <div class="card" style="width: 18rem;" *ngFor="let quote of quotes">
+        <div class="card" style="width: 28rem;" *ngFor="let quote of quotes">
         <div class="card-body">
           <h5 class="card-title">Wisdom</h5>
           <p class="card-text">
@@ -20,8 +21,10 @@
                 <span class="text-primary">Upvote
                     {{quote.upvote}}
                 </span>
+                <button id="btn-like" ngClick ="likeButtonClick()">Like</button><br>
+                <button id="btn-dislike" ngClick ="dislikeButtonClick()">Dislike</button><br>
                 <span class="text-warning">Downvote
-                    {{quote.downvote}}<br>
+                    {{quote.downvote}}
                 </span>
             </li>
             <li>
@@ -56,6 +59,7 @@
           <label for="exampleInputPassword1">Quote</label>
           <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote" ngModel>
         </div>
+    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add</button>
     </form>
-    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add quote</button>
+    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add Quote</button>
 </div>

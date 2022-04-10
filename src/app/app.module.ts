@@ -7,13 +7,15 @@ import { QuoteComponent } from './quote/quote.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HighlightDirective } from './highlight.directive';
 import { FormsModule } from '@angular/forms';
+import { FeelingComponent } from './feeling/feeling.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     NavbarComponent,
-    HighlightDirective
+    HighlightDirective,
+    FeelingComponent
   ],
   imports: [
     BrowserModule,

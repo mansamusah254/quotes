@@ -10,3 +10,8 @@
 .card{
     margin-left: 20px;
 }
+.form-group{
+    max-width: 1200px;
+    text-align: center;
+    margin-left: 350px;
+}
