@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="header">
+    <h1>Quotes for you</h1>
+</div>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+           Mike Tyson
+        </div>
+    </div>
+</div> -->
+<div>
+    <ul *ngFor="let quote of quotes">
+        <li>
+            {{quote.quote}}
+            <span class="text-primary">Upvote
+                {{quote.upvote}}
+            </span>
+            <span class="text-warning">Downvote
+                {{quote.downvote}}
+            </span>
+        </li>
+        <li>
+            {{quote.description}}
+        </li>
+    </ul>
+</div>
+<div class="mt-5 text-center">
+
+</div>
