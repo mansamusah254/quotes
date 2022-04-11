@@ -1,0 +1,19 @@
+<app-form></app-form>
+<div style="text-align: center;">
+    <form ngSubmit = "addDetail()" #goalForm="ngForm" *ngIf="showMe">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Author</label>
+          <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Author" [(ngModel)]="newQuote.description">
+        </div>
+        <!-- <div class="form-group">
+            <label for="exampleInputPassword1">Quote Title</label>
+            <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote title" [(ngModel)]="newQuote.quotetitle">
+          </div> -->
+        <div class="form-group">
+          <label for="exampleInputPassword1">Quote</label>
+          <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote" [(ngModel)]="newQuote.quote">
+        </div>
+    <button type="submit" class="btn btn-primary" (click)="addDetail()">Add</button>
+    </form>
+    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add Quote</button>
+</div>

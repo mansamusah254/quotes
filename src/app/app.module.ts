@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HighlightDirective } from './highlight.directive';
+import { FormControl } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { FeelingComponent } from './feeling/feeling.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { FeelingComponent } from './feeling/feeling.component';
     QuoteComponent,
     NavbarComponent,
     HighlightDirective,
-    FeelingComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,

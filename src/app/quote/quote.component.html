@@ -1,14 +1,7 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 <div class="header">
     <h1>Quotes for your audience</h1>
 </div>
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-           Mike Tyson
-        </div>
-    </div>
-</div> -->
 
 <div class="card" style="width: 100rem;">
     <div id="display">
@@ -17,51 +10,18 @@
           <h5 class="card-title">Wisdom</h5>
           <p class="card-text">
             <li>
-                {{quote.quote}}<br>
-                <span class="text-primary">Upvote
-                    {{quote.upvote}}
-                </span>
+                <!-- {{quote.quote}}<br> -->
+
                 <p>{{numberOfLikes}}</p>
-                <button id="btn-like" (click) ="likeButtonClick()" class="btn btn-success">Like</button><br>
+                <button id="btn-like" (click) ="likeButtonClick()" class="btn btn-success">Like</button>
                 <p>{{numberOfDislikes}}</p>
-                <button id="btn-dislike" (click) ="dislikeButtonClick()" class="btn btn-danger">Dislike</button><br>
-                <span class="text-warning">Downvote
-                    {{quote.downvote}}
-                </span>
+                <button id="btn-dislike" (click) ="dislikeButtonClick()" class="btn btn-danger">Dislike</button>
             </li>
             <li>
-                {{quote.description}}
+                <!-- {{quote.description}} -->
             </li>
           </p>
         </div>
         </div>
     </div>
-</div>
-
-<!-- <div class="container-fluid">
-    <h2 class="text-center">Create a new Goal</h2>
-    <hr>
-    <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
-    </form>
-</div>
-<div class="col-md-6">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-</div> -->
-<div style="text-align: center;">
-    <form ngSubmit = "Add quote()" *ngIf="showMe">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Author</label>
-          <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Author" ngModel>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Quote Title</label>
-            <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote title" ngModel>
-          </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Quote</label>
-          <input type="text" class="form-control" id="exampleInputQuote" placeholder="Enter quote" ngModel>
-        </div>
-    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add</button>
-    </form>
-    <button type="submit" class="btn btn-primary" (click)="toggleMe()">Add Quote</button>
 </div>
